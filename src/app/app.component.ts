@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'omnifood';
+
+  navbar: boolean = false
+  
+  toggleNavBar() {
+    if(this.navbar) {
+      this.navbar = false
+    } else {
+      this.navbar = true
+    }
+  }
 }
