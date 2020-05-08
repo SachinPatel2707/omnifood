@@ -16,11 +16,13 @@ nav {
     height: 10vh;
     width: 100vw;
     background: #444;
-    padding: 5px 20px;
 }
 ul {
     list-style-type: none;
     background-color: #444;
+    position: relative;
+    z-index: 10;
+    padding: 5px 20px;
 }
 a {
     color: white;
@@ -65,18 +67,25 @@ a:hover {
     text-align: center;
     order: 2;
     display: none;
+    /* opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.5s ease-in-out; */
 }
 .item-admin {
     display: none;
     text-align: center;
 }
+
 .item.show {
     display: block;
+    /* visibility: visible;
+    opacity: 1; */
 }
-.item.active a,
+
+/* .item.active a,
 .item-admin.active a {
     border-bottom: 1px solid #e67e22;
-}
+} */
 
 /* Desktop menu */
 @media all and (min-width: 700px) {
@@ -112,3 +121,4 @@ a:hover {
         font-size: 90%;
     }
 }
+

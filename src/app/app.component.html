@@ -10,11 +10,30 @@
         <li class="item" [ngClass]="{'show': navbar, 'active': activeTab == 'cart'}"><a routerLink="/cart" (click)="toggleNavBar()">Cart</a></li>
         
         <li class="item" [ngClass]="{'show': navbar, 'active': activeTab == 'donate'}"><a routerLink="/donate" (click)="toggleNavBar()">Donate</a></li>
+
+        <li class="item" [ngClass]="{'show': navbar, 'active': activeTab == 'donate'}"><a routerLink="/test" (click)="toggleNavBar()">Test</a></li>
         
         <li class="item-admin" [ngClass]="{'show': navbar, 'active': activeTab == 'admin'}"><a routerLink="/admin" (click)="toggleNavBar()">Admin</a></li>
         
         <li class="toggle" (click)="toggleNavBar()"><a><i class="fas fa-bars"></i></a></li>
     </ul>
+
+    <!-- <div class="logo">
+      <a href="#">Omnifood</a>
+    </div>
+    
+    <ul class="nav-links">
+      <li class="link">Home</li>
+      <li class="link">Shop</li>
+      <li class="link">Cart</li>
+      <li class="link">Donate</li>
+    </ul>
+
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div> -->
 </nav>
 <router-outlet></router-outlet>
 </header>

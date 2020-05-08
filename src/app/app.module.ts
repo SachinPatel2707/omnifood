@@ -8,6 +8,7 @@ import { ShopComponent } from './components/shop/shop.component';
 import { CartComponent } from './components/cart/cart.component';
 import { DonateComponent } from './components/donate/donate.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { TestComponent } from './components/test/test.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AdminComponent } from './components/admin/admin.component';
     ShopComponent,
     CartComponent,
     DonateComponent,
-    AdminComponent
+    AdminComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
