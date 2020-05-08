@@ -15,8 +15,10 @@ header {
     background-attachment: fixed;
 }
 
+/* BASIC STYLING */
+
 nav {
-    background: transparent;
+    background: #444;
     padding: 5px 20px;
 }
 ul {
@@ -27,27 +29,30 @@ a {
     text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 3px;
+    transition: border-bottom 0.2s, padding-bottom 0.2s;
 }
-.logo a:hover {
+.logo a:hover,
+.toggle a:hover {
     text-decoration: none;
+    border-bottom: transparent;
 }
 .menu li {
-    font-size: 16px;
+    font-size: 80%;
     padding: 15px 5px;
-    white-space: nowrap;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 .logo a,
 .toggle a {
-    font-size: 200%;
+    font-size: 150%;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 400;
 }
 
+/* MOBILE MENU */
 
-/* Mobile menu */
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -57,38 +62,48 @@ a:hover {
 .toggle {
     order: 1;
 }
-.item.button {
-    order: 2;
-}
 .item {
     width: 100%;
     text-align: center;
-    order: 3;
+    order: 2;
     display: none;
+}
+.item-admin {
+    display: none;
+    text-align: center;
 }
 .item.active {
     display: block;
 }
 
 /* Desktop menu */
-@media all and (min-width: 900px) {
+@media all and (min-width: 700px) {
+    nav {
+        background-color: transparent;
+    }
     .item {
         display: block;
         width: auto;
+        order: 1;
+        flex: 1;
     }
     .toggle {
         display: none;
     }
     .logo {
         order: 0;
+        flex: 5;
     }
-    .item {
-        order: 1;
+    .logo a {
+        font-size: 200%;
     }
-    .button {
+    .item-admin {
+        display: block;
+        width: auto;
         order: 2;
+        flex: 1;
     }
     .menu li {
-        padding: 25px 15px;
+        font-size: 90%;
     }
 }
