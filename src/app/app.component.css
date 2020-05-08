@@ -2,11 +2,6 @@
 /* REUSABLE COMPONENTS */
 /* ======================================================== */
 
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
 header {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assets/img/hero.jpg');
     height: 100vh;
@@ -18,19 +13,22 @@ header {
 /* BASIC STYLING */
 
 nav {
+    height: 10vh;
+    width: 100vw;
     background: #444;
     padding: 5px 20px;
 }
 ul {
     list-style-type: none;
+    background-color: #444;
 }
 a {
     color: white;
     text-decoration: none;
+    padding-bottom: 3px;
 }
 a:hover {
     border-bottom: 1px solid #e67e22;
-    padding-bottom: 3px;
     transition: border-bottom 0.2s, padding-bottom 0.2s;
 }
 .logo a:hover,
@@ -72,13 +70,20 @@ a:hover {
     display: none;
     text-align: center;
 }
-.item.active {
+.item.show {
     display: block;
+}
+.item.active a,
+.item-admin.active a {
+    border-bottom: 1px solid #e67e22;
 }
 
 /* Desktop menu */
 @media all and (min-width: 700px) {
     nav {
+        background-color: transparent;
+    }
+    ul {
         background-color: transparent;
     }
     .item {

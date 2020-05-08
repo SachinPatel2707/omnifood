@@ -2,12 +2,19 @@
   <nav>
     <ul class="menu">
         <li class="logo"><a href="#">Omnifood</a></li>
-        <li class="item" [ngClass]="{'active': navbar === true}"><a href="#">Home</a></li>
-        <li class="item" [ngClass]="{'active': navbar === true}"><a href="#">Shop</a></li>
-        <li class="item" [ngClass]="{'active': navbar === true}"><a href="#">Cart</a></li>
-        <li class="item" [ngClass]="{'active': navbar === true}"><a href="#">Donate</a></li>
-        <li class="item-admin" [ngClass]="{'active': navbar === true}"><a href="#">Admin</a></li>
-        <li class="toggle" (click)="toggleNavBar()"><a href="#"><i class="fas fa-bars"></i></a></li>
+        
+        <li class="item" [ngClass]="{'show': navbar, 'active': activeTab == 'home'}"><a routerLink="/home" (click)="toggleNavBar()">Home</a></li>
+        
+        <li class="item" [ngClass]="{'show': navbar, 'active': activeTab == 'shop'}"><a routerLink="/shop" (click)="toggleNavBar()">Shop</a></li>
+        
+        <li class="item" [ngClass]="{'show': navbar, 'active': activeTab == 'cart'}"><a routerLink="/cart" (click)="toggleNavBar()">Cart</a></li>
+        
+        <li class="item" [ngClass]="{'show': navbar, 'active': activeTab == 'donate'}"><a routerLink="/donate" (click)="toggleNavBar()">Donate</a></li>
+        
+        <li class="item-admin" [ngClass]="{'show': navbar, 'active': activeTab == 'admin'}"><a routerLink="/admin" (click)="toggleNavBar()">Admin</a></li>
+        
+        <li class="toggle" (click)="toggleNavBar()"><a><i class="fas fa-bars"></i></a></li>
     </ul>
 </nav>
+<router-outlet></router-outlet>
 </header>
