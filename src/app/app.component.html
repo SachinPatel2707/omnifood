@@ -1,39 +1,22 @@
 <header>
   <nav>
-    <ul class="menu">
-        <li class="logo"><a href="#">Omnifood</a></li>
-        
-        <li class="item" [ngClass]="{'show': navbar, 'active': activeTab == 'home'}"><a routerLink="/home" (click)="toggleNavBar()">Home</a></li>
-        
-        <li class="item" [ngClass]="{'show': navbar, 'active': activeTab == 'shop'}"><a routerLink="/shop" (click)="toggleNavBar()">Shop</a></li>
-        
-        <li class="item" [ngClass]="{'show': navbar, 'active': activeTab == 'cart'}"><a routerLink="/cart" (click)="toggleNavBar()">Cart</a></li>
-        
-        <li class="item" [ngClass]="{'show': navbar, 'active': activeTab == 'donate'}"><a routerLink="/donate" (click)="toggleNavBar()">Donate</a></li>
-
-        <li class="item" [ngClass]="{'show': navbar, 'active': activeTab == 'donate'}"><a routerLink="/test" (click)="toggleNavBar()">Test</a></li>
-        
-        <li class="item-admin" [ngClass]="{'show': navbar, 'active': activeTab == 'admin'}"><a routerLink="/admin" (click)="toggleNavBar()">Admin</a></li>
-        
-        <li class="toggle" (click)="toggleNavBar()"><a><i class="fas fa-bars"></i></a></li>
-    </ul>
-
-    <!-- <div class="logo">
+    <div class="logo">
       <a href="#">Omnifood</a>
     </div>
     
-    <ul class="nav-links">
-      <li class="link">Home</li>
-      <li class="link">Shop</li>
-      <li class="link">Cart</li>
-      <li class="link">Donate</li>
+    <ul class="nav-links" [ngClass]="{'active': navbar}">
+      <li class="link"><a routerLink="/home" (click)="toggleNavBar()">Home</a></li>
+      <li class="link"><a routerLink="/shop" (click)="toggleNavBar()">Shop</a></li>
+      <li class="link"><a routerLink="/cart" (click)="toggleNavBar()">Cart</a></li>
+      <li class="link"><a routerLink="/donate" (click)="toggleNavBar()">Donate</a></li>
+      <li class="link link-admin"><a routerLink="/admin">Admin</a></li>
     </ul>
 
-    <div class="burger">
+    <div class="burger" [ngClass]="{'toggle': navbar}" (click)="toggleNavBar()">
       <div class="line1"></div>
       <div class="line2"></div>
       <div class="line3"></div>
-    </div> -->
+    </div>
 </nav>
 <router-outlet></router-outlet>
 </header>
