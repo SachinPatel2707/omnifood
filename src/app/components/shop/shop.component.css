@@ -1,12 +1,107 @@
 .container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
+    align-items: center;
     width: 100vw;
     height: 90vh;
     padding: 5px 20px;
     color: #fff;
 }
 
-.search {
-    flex-basis: 50%;
+.search-box {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.search-box p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.input {
+    background-color: #ddd;
+    height: 30px;
+    width: 75%;
+    border-radius: 200px;
+    line-height: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.input input[type=text],
+.input input:focus {
+    width: 65%;
+    padding-left: 7%;
+    border: none;
+    outline: none;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+.input button,
+.input button:focus {
+    width: 30%;
+    border: 1px solid #ee6677;
+    border-radius: 200px;
+    background-color: #e67e22;
+    color: #fff;
+    outline: none;
+    /* margin: auto; */
+    padding: 7px 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.locations div {
+    height: 10%;
+    width: 40%;
+    background-color: #e67e22;
+    display: flex;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.locations div:first-of-type {
+    background-color: transparent;
+    height: fit-content;
+    width: 80%;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.locations div h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+.locations div p {
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 70%;
+    font-weight: 400;
 }

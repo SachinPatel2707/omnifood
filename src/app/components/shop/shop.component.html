@@ -1,5 +1,18 @@
 <div class="container">
-    <div class="search">
-        <input type="text"/>
+    <div class="search-box">
+        <p>Enter your location</p>
+        <div class="input">
+            <input type="text" #search />
+            <!-- <button (click)="searchByLocation(search.value)">Search</button> -->
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <div class="locations">
+        <div><h3>We operate in these cities...</h3></div>
+        <div><p>Delhi</p></div>
+        <div><p>Noida</p></div>
+        <div><p>Ghaziabad</p></div>
+        <div><p>Gurugram</p></div>
     </div>
 </div>
