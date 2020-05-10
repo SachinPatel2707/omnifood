@@ -4,7 +4,7 @@
 
 header {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assets/img/hero.jpg');
-    height: 100vh;
+    height: fit-content;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -119,7 +119,7 @@ a:hover {
         display: flex;
         flex-flow: row nowrap;
         background-color: transparent;
-        height: 10vh;
+        height: 15vh;
         padding-top: 20px;
     }
     ul {

@@ -8,6 +8,12 @@
     color: #fff;
 }
 
+a, a:hover {
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+
 .search-box {
     width: 100%;
     height: 30%;
@@ -49,18 +55,17 @@
     background-color: transparent;
 }
 
-.input button,
-.input button:focus {
+.input a,
+.input a:focus {
     width: 30%;
     border: 1px solid #ee6677;
     border-radius: 200px;
     background-color: #e67e22;
     color: #fff;
-    outline: none;
-    /* margin: auto; */
-    padding: 7px 14px;
-    cursor: pointer;
     text-transform: uppercase;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 80%;
 }
 
 .locations {
@@ -96,7 +101,7 @@
 .locations div h3 {
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 90%;
+    font-size: 80%;
 }
 
 .locations div p {
@@ -104,4 +109,41 @@
     text-transform: uppercase;
     font-size: 70%;
     font-weight: 400;
+}
+
+
+/* FOR DESKTOP */
+
+@media all and (min-width: 700px) { 
+    .container {
+        height: 85vh;
+    }   
+    .search-box p {
+        margin-bottom: 40px;
+        font-size: 125%;
+    }
+
+    .input {
+        width: 25%;
+    }
+
+    .locations {
+        justify-content: center;
+    }
+
+    .locations div {
+        width: 10%;
+        margin: 20px;
+    }
+    
+    .locations div:first-of-type {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .locations div h3 {
+        font-size: 90%;
+    }
 }

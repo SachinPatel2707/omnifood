@@ -1,15 +1,15 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 import { DataSharingService } from '../../services/data-sharing.service';
 import { DataService } from '../../services/data.service';
 
 @Component({
-  selector: 'app-test',
-  templateUrl: './test.component.html',
-  styleUrls: ['./test.component.css']
+  selector: 'app-restaurants',
+  templateUrl: './restaurants.component.html',
+  styleUrls: ['./restaurants.component.css']
 })
-export class TestComponent implements OnInit {
+export class RestaurantsComponent implements OnInit {
 
   location: string
   restaurants: any = []

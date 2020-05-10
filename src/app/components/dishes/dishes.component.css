@@ -20,9 +20,25 @@ ul {
     list-style: none;
 }
 
+.btn-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e67e22;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60%;
+    font-weight: 400;
+    padding: 2.5% 5%;
+    border-radius: 200px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-top: 10%;
+}
+
 .card {
-    width: 60%;
-    height: 40vh;
+    width: 65%;
+    height: 45vh;
     background-color: #ddd;
     margin: 20px;
     border-radius: 10px;
@@ -30,6 +46,7 @@ ul {
     letter-spacing: 1px;
     word-spacing: 2px;
     border-right: 3px solid #ddd;
+    border-top: 3px solid #ddd;
 }
 
 .card img {
@@ -44,7 +61,15 @@ ul {
 }
 
 .card ul li {
-    margin: 5% 7%;
+    margin: 4% 8%;
+}
+
+.card ul li:last-of-type {
+    margin: 0%;
+    padding: 4% 8%;
+    border-right: 3px solid #e67e22;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .medium {
@@ -58,7 +83,23 @@ ul {
 }
 
 .small {
-    font-size: 55%;
+    font-size: 65%;
     color: #e67e22;
     font-weight: 400;
+}
+
+.btn {
+    margin: 0px;
+    text-align: center;
+    background-color: #e67e22;
+    color: #fff;
+    cursor: pointer;
+}
+
+i {
+    display: none;
+}
+
+.active {
+    display: inline-block;
 }
