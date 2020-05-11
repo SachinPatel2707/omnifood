@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: fit-content;
+    min-height: 90vh;
     padding: 20px 20px;
     color: #fff;
 }
@@ -61,4 +61,25 @@ ul {
     font-size: 55%;
     color: #e67e22;
     font-weight: 400;
+}
+
+
+/* DESKTOP */
+
+@media all and (min-width: 700px) {
+    .container {
+        flex-flow: row wrap;
+        justify-content: center;
+        min-height: 85vh;
+        padding: 3% 6%;
+    }
+
+    .container div:first-of-type {
+        width: 100%;
+    }
+
+    .card {
+        width: 17%;
+        margin: 40px 20px;
+    }    
 }

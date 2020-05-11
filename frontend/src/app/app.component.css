@@ -46,7 +46,7 @@ a:hover {
         background-color: #444;
         overflow-x: hidden;
     }
-    
+
     .logo {
         flex: 1;
         padding-left: 25px;
@@ -59,7 +59,7 @@ a:hover {
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: flex-end;
-        width: 50%;
+        min-width: 50%;
         position: absolute;
         right: 0px;
         top: 10vh;

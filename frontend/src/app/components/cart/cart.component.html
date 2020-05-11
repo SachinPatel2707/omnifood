@@ -1,6 +1,6 @@
 <div class="container">
     <h3>Your Order</h3>
-    <ul *ngIf="cartEmpty">
+    <ul *ngIf="cartEmpty" class="items-list">
         <li class="item">
             <div class="dishName">
                 Your cart is empty
@@ -10,7 +10,7 @@
     <ul *ngIf="!cartEmpty" class="items-list">
         <li *ngFor="let dish of cart; let i = index" class="item">
             <div class="dishName">{{ dish.dishName }}</div>
-            <div (click)="removeDish(i)"><i class="fas fa-trash-alt"></i></div>
+            <div (click)="removeDish(i)"><i class="far fa-trash-alt"></i></div>
             <div class="btn" (click)="incQuantity(i)"><a>+</a></div>
             <div>{{ quantity[i] }}</div>
             <div class="btn" (click)="decQuantity(i)"><a>-</a></div>

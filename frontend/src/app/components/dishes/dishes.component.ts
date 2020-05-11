@@ -9,7 +9,8 @@ import { DataSharingService } from '../../services/data-sharing.service';
 })
 export class DishesComponent implements OnInit {
 
-  restaurant: Object
+  restaurant: any
+  isRestaurant: boolean = false
   cart: Object[]
 
   constructor(private dataSharing: DataSharingService) { }
@@ -18,6 +19,8 @@ export class DishesComponent implements OnInit {
     this.dataSharing.sharedSelectedRestaurant
     .subscribe(data => {
       this.restaurant = data
+      this.isRestaurant = true
+      console.log(this.restaurant)
     })
 
     this.dataSharing.sharedCart

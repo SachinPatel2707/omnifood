@@ -12,7 +12,35 @@ export class DataSharingService {
   sharedLocation = this.location.asObservable()
 
   // keep track of selected restaurant
-  private selectedRestaurant = new BehaviorSubject<Object>({})
+  private selectedRestaurant = new BehaviorSubject<Object>(
+    {
+      "id": 5,
+      "name": "Restaurant 2",
+      "type": "Chinese",
+      "location": "Delhi",
+      "contact": "+91-900000000",
+      "accessed": 127,
+        "image": "../../assets/img/2.jpg",
+      "dishes": [
+        {
+          "id": 6,
+          "name": "Restaurant 2",
+          "dishName": "Chilly Paneer",
+          "dishImage": "../../assets/img/7.jpg",
+          "cost": 240,
+          "suggestion": "Best with hakka noodles"
+        },
+        {
+          "id": 7,
+          "name": "Restaurant 2",
+          "dishName": "Hakka Noodles",
+          "dishImage": "../../assets/img/7.jpg",
+                  "cost": 180,
+                  "suggestion": "Best with Paneer Delicacy"
+        }
+      ]
+    }
+  )
   sharedSelectedRestaurant = this.selectedRestaurant.asObservable()
 
   // keep track of items in cart

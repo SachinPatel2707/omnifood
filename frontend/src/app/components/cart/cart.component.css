@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 90vh;
+    min-height: 90vh;
     /* padding: 20px 20px; */
     color: #fff;
 }
@@ -60,12 +60,12 @@ h3 {
     flex: 1;
     display: flex;
     padding: 0px 5px;
+    margin-right: 5px;
     justify-content: center;
     align-items: center;
 }
 
 .item div i {
-    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -144,4 +144,91 @@ form {
     font-weight: 400;
     border-radius: 200px;
     padding: 7.5px 15px;
+}
+
+
+/* DESKTOP */
+
+@media all and (min-width: 700px) {
+    .container {
+        min-height: 85vh;
+    }
+
+    h3 {
+        font-size: 100%;
+        /* font-weight: 400; */
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+
+    .items-list {
+        width: 40vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: space-between;
+        background-color: #ddd;
+        color: #444;
+        font-size: 90%;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .item {
+        height: 5vh;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .item div:first-of-type {
+        flex: 32;
+        justify-content: flex-start;
+    }
+    
+    .item div {
+        flex: 1;
+        display: flex;
+        padding: 0px 5px;
+        margin-right: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item div:nth-of-type(2) {
+        margin-right: 15px;
+    }
+
+    /* Form styling */
+
+    form {
+        width: 40vw;
+        font-size: 90%;
+        margin-bottom: 5%;
+    }
+
+    .form-group li:last-of-type {
+        margin-top: 15px;
+    }
+
+    .form-group li a {
+        background-color: #e67e22;
+        color: #fff;
+        font-size: 80%;
+        font-weight: 400;
+        border-radius: 200px;
+        padding: 2.5% 7%;
+    }
+
+    .form-group li label {
+        flex: 2;
+        text-align: end;
+        padding-right: 5%;
+    }
 }
