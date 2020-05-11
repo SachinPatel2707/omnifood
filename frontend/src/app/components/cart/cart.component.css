@@ -223,7 +223,7 @@ form {
         font-size: 80%;
         font-weight: 400;
         border-radius: 200px;
-        padding: 2.5% 7%;
+        padding: 7px 15px;
     }
 
     .form-group li label {
