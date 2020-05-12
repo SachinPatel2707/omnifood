@@ -26,7 +26,7 @@ export class RestaurantsComponent implements OnInit {
   }
 
   fetchRestaurants(): void {
-    this.data.getRestaurantsByLocation(this.location)
+    this.data.getRestaurants()
     .subscribe(data => {
       console.log(data)
       this.restaurants = data
