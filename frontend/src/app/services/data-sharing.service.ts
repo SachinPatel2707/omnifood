@@ -8,7 +8,7 @@ import { take } from 'rxjs/operators';
 export class DataSharingService {
 
   // whether the user is logged in or not
-  private isLoggedIn = new BehaviorSubject<boolean>(true)
+  private isLoggedIn = new BehaviorSubject<boolean>(false)
   sharedIsLoggedIn = this.isLoggedIn.asObservable()
 
   // keep track of current user
@@ -36,6 +36,7 @@ export class DataSharingService {
           "dishName": "Chilly Paneer",
           "dishImage": "../../assets/img/7.jpg",
           "cost": 240,
+          "isAdded": false,
           "suggestion": "Best with hakka noodles"
         },
         {
@@ -43,8 +44,9 @@ export class DataSharingService {
           "name": "Restaurant 2",
           "dishName": "Hakka Noodles",
           "dishImage": "../../assets/img/7.jpg",
-                  "cost": 180,
-                  "suggestion": "Best with Paneer Delicacy"
+          "cost": 180,
+          "isAdded": false,
+          "suggestion": "Best with Paneer Delicacy"
         }
       ]
     }
@@ -52,32 +54,37 @@ export class DataSharingService {
   sharedSelectedRestaurant = this.selectedRestaurant.asObservable()
 
   // keep track of items in cart
-  private cart = new BehaviorSubject<Array<Object>>([
-    {
-      "id": 2,
-      "name": "Odeon Restaurant",
-      "dishName": "Shahi Paneer",
-      "dishImage": "../../assets/img/4.jpg",
-      "cost": 240,
-      "suggestion": "Best with naan"
-    },
-    {
-      "id": 3,
-      "name": "Odeon Restaurant",
-      "dishName": "Lachha Paratha",
-      "dishImage": "../../assets/img/5.jpg",
-      "cost": 80,
-      "suggestion": "Best with Paneer Dishes"
-    },
-    {
-      "id": 4,
-      "name": "Odeon Restaurant",
-      "dishName": "Chowmein",
-      "dishImage": "../../assets/img/6.jpg",
-      "cost": 180,
-      "suggestion": ""
-    }
-  ])
+  
+  // private cart = new BehaviorSubject<Array<Object>>([
+  //   {
+  //     "id": 2,
+  //     "name": "Odeon Restaurant",
+  //     "dishName": "Shahi Paneer",
+  //     "dishImage": "../../assets/img/4.jpg",
+  //     "cost": 240,
+  //     "isAdded": true,
+  //     "suggestion": "Best with naan"
+  //   },
+  //   {
+  //     "id": 3,
+  //     "name": "Odeon Restaurant",
+  //     "dishName": "Lachha Paratha",
+  //     "dishImage": "../../assets/img/5.jpg",
+  //     "cost": 80,
+  //     "isAdded": true,
+  //     "suggestion": "Best with Paneer Dishes"
+  //   },
+  //   {
+  //     "id": 4,
+  //     "name": "Odeon Restaurant",
+  //     "dishName": "Chowmein",
+  //     "dishImage": "../../assets/img/6.jpg",
+  //     "cost": 180,
+  //     "isAdded": true,
+  //     "suggestion": ""
+  //   }
+  // ])
+  private cart = new BehaviorSubject<Array<Object>>([])
   sharedCart = this.cart.asObservable()
 
   constructor() { }

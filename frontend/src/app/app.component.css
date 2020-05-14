@@ -28,19 +28,19 @@ ul li:hover {
     border: 2px solid #fff;
 }
 
-ul li:nth-of-type(3),
+/* ul li:nth-of-type(3),
 ul li:nth-of-type(3):hover {
     padding: 0;
     border: none;
-}
+} */
 
-ul li:last-of-type {
+/* ul li:last-of-type {
     border: 2px solid #fff;
-}
+} */
 
-ul li:last-of-type:hover {
+/* ul li:last-of-type:hover {
     background-color: #444;
-}
+} */
 
 ul li img {
     position: relative;
@@ -57,6 +57,14 @@ nav a {
     color: #fff;
     font-weight: 400;
     transition: all 0.2s;
+}
+
+#activeLink {
+    border: 2px solid #fff;
+}
+
+#activeLink:hover {
+    background-color: #444;
 }
 
 .outlet {

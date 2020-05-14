@@ -52,6 +52,7 @@ h3 {
 .restaurant-cards {
     padding-top: 15vh;
     min-height: 30vh;
+    overflow: hidden;
 }
 
 .cards {

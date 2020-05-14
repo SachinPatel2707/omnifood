@@ -1,12 +1,12 @@
 <div>
-<header *ngIf="isLoggedIn">
+<header>
     <nav fxLayout="row nowrap" fxLayoutAlign="space-around center" class="animate__animated animate__fadeInDown">
         <ul fxLayout="row nowrap" fxLayoutAlign="space-around center">
-            <li><a routerLink="/home">Home</a></li>
-            <li><a href="">Donate</a></li>
-            <li class="logo" fxFlexAlign="flex-start"><img src="../assets/img/logo.png" alt=""></li>
-            <li><a href="">Cart</a></li>
-            <li><a routerLink="/shop">Order Now</a></li>
+            <li  *ngIf="isLoggedIn" class="animate__animated animate__fadeInDown"><a routerLink="/home">Home</a></li>
+            <li *ngIf="isLoggedIn" class="animate__animated animate__fadeInDown"><a href="">Donate</a></li>
+            <li class="logo animate__animated animate__fadeInDown" fxFlexAlign="flex-start" style="padding: 0; border: none;"><img src="../assets/img/logo.png" alt=""></li>
+            <li *ngIf="isLoggedIn" class="animate__animated animate__fadeInDown"><a href="">Cart</a></li>
+            <li *ngIf="isLoggedIn" class="animate__animated animate__fadeInDown" id="activeLink"><a routerLink="/shop">Order Now</a></li>
         </ul>
     </nav>
 </header>

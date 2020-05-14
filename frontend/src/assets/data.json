@@ -13,6 +13,7 @@
 				"id": 2,
 				"name": "Odeon Restaurant",
 				"dishName": "Shahi Paneer",
+				"isAdded": false,
 				"dishImage": "../../assets/img/4.jpg",
 				"cost": 240,
 				"suggestion": "Best with naan"
@@ -23,6 +24,7 @@
 				"dishName": "Lachha Paratha",
 				"dishImage": "../../assets/img/5.jpg",
 				"cost": 80,
+				"isAdded": false,
 				"suggestion": "Best with Paneer Dishes"
 			},
 			{
@@ -31,6 +33,7 @@
 				"dishName": "Chowmein",
 				"dishImage": "../../assets/img/6.jpg",
 				"cost": 180,
+				"isAdded": false,
 				"suggestion": ""
 			},
 			{
@@ -39,6 +42,7 @@
 				"dishName": "Chilly Paneer",
 				"dishImage": "../../assets/img/7.jpg",
 				"cost": 240,
+				"isAdded": false,
 				"suggestion": "Best with hakka noodles"
 			},
 			{
@@ -46,7 +50,8 @@
 				"name": "Restaurant 2",
 				"dishName": "Hakka Noodles",
 				"dishImage": "../../assets/img/7.jpg",
-                "cost": 180,
+				"cost": 180,
+				"isAdded": false,
                 "suggestion": "Best with Paneer Delicacy"
 			},
 			{
@@ -55,6 +60,7 @@
 				"dishName": "Italy Pizza",
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 240,
+				"isAdded": false,
 				"suggestion": ""
 			},
 			{
@@ -63,6 +69,7 @@
 				"dishName": "Alfredo Pasta",
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 350,
+				"isAdded": false,
 				"suggestion": "You might white Sauce"
 			},
 			{
@@ -71,6 +78,7 @@
 				"dishName": "Chidar Pasta",
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 180,
+				"isAdded": false,
 				"suggestion": ""
 			}
 		]
@@ -90,6 +98,7 @@
 				"dishName": "Chilly Paneer",
 				"dishImage": "../../assets/img/7.jpg",
 				"cost": 240,
+				"isAdded": false,
 				"suggestion": "Best with hakka noodles"
 			},
 			{
@@ -97,7 +106,8 @@
 				"name": "Restaurant 2",
 				"dishName": "Hakka Noodles",
 				"dishImage": "../../assets/img/7.jpg",
-                "cost": 180,
+				"cost": 180,
+				"isAdded": false,
                 "suggestion": "Best with Paneer Delicacy"
 			}
 		]
@@ -117,6 +127,7 @@
 				"dishName": "Italy Pizza",
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 240,
+				"isAdded": false,
 				"suggestion": ""
 			},
 			{
@@ -125,6 +136,7 @@
 				"dishName": "Alfredo Pasta",
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 350,
+				"isAdded": false,
 				"suggestion": "You might white Sauce"
 			},
 			{
@@ -133,6 +145,7 @@
 				"dishName": "Chidar Pasta",
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 180,
+				"isAdded": false,
 				"suggestion": ""
 			}
 		]
@@ -153,6 +166,7 @@
 				"dishName": "Shahi Paneer",
 				"dishImage": "../../assets/img/4.jpg",
 				"cost": 240,
+				"isAdded": false,
 				"suggestion": "Best with naan"
 			},
 			{
@@ -161,6 +175,7 @@
 				"dishName": "Lachha Paratha",
 				"dishImage": "../../assets/img/5.jpg",
 				"cost": 80,
+				"isAdded": false,
 				"suggestion": "Best with Paneer Dishes"
 			},
 			{
@@ -169,6 +184,7 @@
 				"dishName": "Chowmein",
 				"dishImage": "../../assets/img/6.jpg",
 				"cost": 180,
+				"isAdded": false,
 				"suggestion": ""
 			}
 		]
@@ -188,6 +204,7 @@
 				"dishName": "Chilly Paneer",
 				"dishImage": "../../assets/img/7.jpg",
 				"cost": 240,
+				"isAdded": false,
 				"suggestion": "Best with hakka noodles"
 			},
 			{
@@ -195,7 +212,8 @@
 				"name": "Restaurant 2",
 				"dishName": "Hakka Noodles",
 				"dishImage": "../../assets/img/7.jpg",
-                "cost": 180,
+				"cost": 180,
+				"isAdded": false,
                 "suggestion": "Best with Paneer Delicacy"
 			}
 		]
@@ -214,6 +232,7 @@
 				"name": "Restaurant 3",
 				"dishName": "Italy Pizza",
 				"dishImage": "../../assets/img/8.jpg",
+				"isAdded": false,
 				"cost": 240,
 				"suggestion": ""
 			},
@@ -223,12 +242,14 @@
 				"dishName": "Alfredo Pasta",
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 350,
+				"isAdded": false,
 				"suggestion": "You might white Sauce"
 			},
 			{
 				"id": 11,
 				"name": "Restaurant 3",
 				"dishName": "Chidar Pasta",
+				"isAdded": false,
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 180,
 				"suggestion": ""
@@ -249,6 +270,7 @@
 				"id": 2,
 				"name": "Odeon Restaurant",
 				"dishName": "Shahi Paneer",
+				"isAdded": false,
 				"dishImage": "../../assets/img/4.jpg",
 				"cost": 240,
 				"suggestion": "Best with naan"
@@ -257,6 +279,7 @@
 				"id": 3,
 				"name": "Odeon Restaurant",
 				"dishName": "Lachha Paratha",
+				"isAdded": false,
 				"dishImage": "../../assets/img/5.jpg",
 				"cost": 80,
 				"suggestion": "Best with Paneer Dishes"
@@ -265,6 +288,7 @@
 				"id": 4,
 				"name": "Odeon Restaurant",
 				"dishName": "Chowmein",
+				"isAdded": false,
 				"dishImage": "../../assets/img/6.jpg",
 				"cost": 180,
 				"suggestion": ""
@@ -273,6 +297,7 @@
 				"id": 6,
 				"name": "Restaurant 2",
 				"dishName": "Chilly Paneer",
+				"isAdded": false,
 				"dishImage": "../../assets/img/7.jpg",
 				"cost": 240,
 				"suggestion": "Best with hakka noodles"
@@ -281,6 +306,7 @@
 				"id": 7,
 				"name": "Restaurant 2",
 				"dishName": "Hakka Noodles",
+				"isAdded": false,
 				"dishImage": "../../assets/img/7.jpg",
                 "cost": 180,
                 "suggestion": "Best with Paneer Delicacy"
@@ -289,6 +315,7 @@
 				"id": 9,
 				"name": "Restaurant 3",
 				"dishName": "Italy Pizza",
+				"isAdded": false,
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 240,
 				"suggestion": ""
@@ -297,6 +324,7 @@
 				"id": 10,
 				"name": "Restaurant 3",
 				"dishName": "Alfredo Pasta",
+				"isAdded": false,
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 350,
 				"suggestion": "You might white Sauce"
@@ -305,6 +333,7 @@
 				"id": 11,
 				"name": "Restaurant 3",
 				"dishName": "Chidar Pasta",
+				"isAdded": false,
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 180,
 				"suggestion": ""
@@ -324,6 +353,7 @@
 				"id": 6,
 				"name": "Restaurant 2",
 				"dishName": "Chilly Paneer",
+				"isAdded": false,
 				"dishImage": "../../assets/img/7.jpg",
 				"cost": 240,
 				"suggestion": "Best with hakka noodles"
@@ -332,6 +362,7 @@
 				"id": 7,
 				"name": "Restaurant 2",
 				"dishName": "Hakka Noodles",
+				"isAdded": false,
 				"dishImage": "../../assets/img/7.jpg",
                 "cost": 180,
                 "suggestion": "Best with Paneer Delicacy"
@@ -351,6 +382,7 @@
 				"id": 9,
 				"name": "Restaurant 3",
 				"dishName": "Italy Pizza",
+				"isAdded": false,
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 240,
 				"suggestion": ""
@@ -359,6 +391,7 @@
 				"id": 10,
 				"name": "Restaurant 3",
 				"dishName": "Alfredo Pasta",
+				"isAdded": false,
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 350,
 				"suggestion": "You might white Sauce"
@@ -367,6 +400,7 @@
 				"id": 11,
 				"name": "Restaurant 3",
 				"dishName": "Chidar Pasta",
+				"isAdded": false,
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 180,
 				"suggestion": ""
@@ -387,6 +421,7 @@
 				"id": 2,
 				"name": "Odeon Restaurant",
 				"dishName": "Shahi Paneer",
+				"isAdded": false,
 				"dishImage": "../../assets/img/4.jpg",
 				"cost": 240,
 				"suggestion": "Best with naan"
@@ -395,6 +430,7 @@
 				"id": 3,
 				"name": "Odeon Restaurant",
 				"dishName": "Lachha Paratha",
+				"isAdded": false,
 				"dishImage": "../../assets/img/5.jpg",
 				"cost": 80,
 				"suggestion": "Best with Paneer Dishes"
@@ -403,6 +439,7 @@
 				"id": 4,
 				"name": "Odeon Restaurant",
 				"dishName": "Chowmein",
+				"isAdded": false,
 				"dishImage": "../../assets/img/6.jpg",
 				"cost": 180,
 				"suggestion": ""
@@ -422,6 +459,7 @@
 				"id": 6,
 				"name": "Restaurant 2",
 				"dishName": "Chilly Paneer",
+				"isAdded": false,
 				"dishImage": "../../assets/img/7.jpg",
 				"cost": 240,
 				"suggestion": "Best with hakka noodles"
@@ -430,6 +468,7 @@
 				"id": 7,
 				"name": "Restaurant 2",
 				"dishName": "Hakka Noodles",
+				"isAdded": false,
 				"dishImage": "../../assets/img/7.jpg",
                 "cost": 180,
                 "suggestion": "Best with Paneer Delicacy"
@@ -449,6 +488,7 @@
 				"id": 9,
 				"name": "Restaurant 3",
 				"dishName": "Italy Pizza",
+				"isAdded": false,
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 240,
 				"suggestion": ""
@@ -457,6 +497,7 @@
 				"id": 10,
 				"name": "Restaurant 3",
 				"dishName": "Alfredo Pasta",
+				"isAdded": false,
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 350,
 				"suggestion": "You might white Sauce"
@@ -465,6 +506,7 @@
 				"id": 11,
 				"name": "Restaurant 3",
 				"dishName": "Chidar Pasta",
+				"isAdded": false,
 				"dishImage": "../../assets/img/8.jpg",
 				"cost": 180,
 				"suggestion": ""
