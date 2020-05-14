@@ -1,148 +1,101 @@
 .container {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    width: 100vw;
-    height: 90vh;
-    padding: 5px 20px;
-    color: #fff;
-}
-
-a, a:hover {
-    outline: none;
-    text-decoration: none;
-    border: none;
-}
-
-.search-box {
     width: 100%;
-    height: 30%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: flex-end;
+    padding: 0 10% 20vh 10%;
+    min-height: 85vh;
 }
 
-.search-box p {
+img {
     width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-    text-transform: uppercase;
+    height: 100%;
 }
 
-.input {
-    background-color: #ddd;
-    height: 30px;
-    width: 75%;
-    border-radius: 200px;
-    line-height: 1;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-
-.input input[type=text],
-.input input:focus {
-    width: 65%;
-    padding-left: 7%;
-    border: none;
-    outline: none;
-    color: #444;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: transparent;
-}
-
-.input a,
-.input a:focus {
-    width: 30%;
-    border: 1px solid #ee6677;
-    border-radius: 200px;
-    background-color: #e67e22;
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 5px;
-    font-size: 80%;
-}
-
-.locations {
-    display: flex;
-    flex-wrap: wrap;
-    height: 70%;
+h3 {
+    font-size: 150%;
     width: 100%;
-    justify-content: space-around;
-    align-content: center;
-}
-
-.locations div {
-    height: 10%;
-    width: 40%;
-    background-color: #e67e22;
-    display: flex;
-    color: #fff;
-    border-radius: 200px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-}
-
-.locations div:first-of-type {
-    background-color: transparent;
     height: fit-content;
-    width: 80%;
-    border: none;
+    text-align: center;
+    margin: 10vh 0;
+}
+
+.filters {
+    min-height: 50vh;
+}
+
+.filter-forms {
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.dropdown {
+    width: 30%;
+    height: fit-content;
+}
+
+.dropdown h4 {
     margin-bottom: 20px;
 }
 
-.locations div h3 {
-    font-weight: 300;
+.dropdown select {
+    width: 100%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    background-color: #78b454;
+    color: #fff;
+    padding: 5px 30px 5px 10px;
     text-transform: uppercase;
-    font-size: 80%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
 }
 
-.locations div p {
-    margin: auto;
-    text-transform: uppercase;
-    font-size: 70%;
+/* CARD DISPLAY */
+
+.restaurant-cards {
+    padding-top: 15vh;
+    min-height: 30vh;
+}
+
+.cards {
+    width: 40%;
+    min-height: 40%;
+    margin-top: 10vh;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-bottom: 10px;
+    border: 2px solid transparent;
+    transition: border 0.2s;
+}
+
+.cards:hover {
+    border: 2px solid #888;
+}
+
+.cards div {
+    height: 7vh;
+    padding: 25px 0 0 15px;
+}
+
+.cards div:first-of-type {
+    height: 50vh;
+    padding: 0;
+}
+
+.cuisine {
+    font-size: 60%;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
+.name {
+    font-size: 130%;
+    font-weight: 600;
+    cursor: pointer;
+}
 
-/* FOR DESKTOP */
+.location {
+    font-size: 90%;
+}
 
-@media all and (min-width: 700px) { 
-    .container {
-        height: 85vh;
-    }   
-    .search-box p {
-        margin-bottom: 40px;
-        font-size: 125%;
-    }
-
-    .input {
-        width: 25%;
-    }
-
-    .locations {
-        justify-content: center;
-    }
-
-    .locations div {
-        width: 10%;
-        margin: 20px;
-    }
-    
-    .locations div:first-of-type {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px;
-    }
-
-    .locations div h3 {
-        font-size: 90%;
-    }
+.contact {
+    font-size: 80%;
+    color: #28b062;
 }

@@ -10,6 +10,7 @@ import { DataSharingService } from './services/data-sharing.service';
 })
 export class AppComponent {
   title = 'omnifood'
+  isLoggedIn: boolean
   navbar: boolean = false
   location: string
   
@@ -22,6 +23,9 @@ export class AppComponent {
       this.location = location
       // console.log(location)
     })
+
+    this.dataSharing.sharedIsLoggedIn
+    .subscribe(data => this.isLoggedIn = data)
   }
 
   toggleNavBar() {
