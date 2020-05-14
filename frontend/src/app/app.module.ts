@@ -3,8 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { AngularMaterialModule } from './angular-material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -27,7 +26,6 @@ import { RestaurantComponent } from './components/restaurant/restaurant.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularMaterialModule,
     FlexLayoutModule,
     HttpClientModule,
     ReactiveFormsModule,
