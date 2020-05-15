@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { RestaurantComponent } from './components/restaurant/restaurant.component';
 import { CanActivateRouteGuard } from './can-activate-routes.guard';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { CanActivateRouteGuard } from './can-activate-routes.guard';
     LoginComponent,
     HomeComponent,
     ShopComponent,
-    RestaurantComponent
+    RestaurantComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
@@ -30,10 +31,8 @@ import { CanActivateRouteGuard } from './can-activate-routes.guard';
     FlexLayoutModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule,
+    FormsModule
     // AlertsModule.forRoot(),
-    BrowserModule,
-    BrowserAnimationsModule
   ],
   providers: [CanActivateRouteGuard],
   bootstrap: [AppComponent]

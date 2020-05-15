@@ -1,4 +1,4 @@
-<div>
+<div *ngIf="isLoggedIn">
 <header>
     <nav fxLayout="row nowrap" fxLayoutAlign="space-around center" class="animate__animated animate__fadeInDown">
         <ul fxLayout="row nowrap" fxLayoutAlign="space-around center">
@@ -11,6 +11,22 @@
     </nav>
 </header>
 </div>
+
 <div class="outlet">
     <router-outlet></router-outlet>
+</div>
+
+<div *ngIf="isLoggedIn" class="section-footer" fxLayout="row nowrap">
+    <ul fxFlex="0 1 50%" fxLayout="row nowrap" fxLayoutAlign="center center" fxLayoutGap="10px">
+        <li>dfs</li>
+        <li>fdsf</li>
+        <li>dfs</li>
+        <li>fs</li>
+    </ul>
+    <ul fxFlex="0 1 50%" fxLayout="row nowrap" fxLayoutAlign="center center" fxLayoutGap="20px">
+        <li><i class="footer-icon fab fa-instagram-square fa-lg"></i></li>
+        <li><i class="footer-icon fab fa-facebook-square fa-lg"></i></li>
+        <li><i class="footer-icon fab fa-twitter-square fa-lg"></i></li>
+        <li><i class="footer-icon fab fa-google-plus-square fa-lg"></i></li>
+    </ul>
 </div>

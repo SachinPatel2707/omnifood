@@ -79,4 +79,19 @@ export class RestaurantComponent implements OnInit {
     console.log(this.quantities)
   }
 
+  checkOut() {
+
+    console.log(this.quantities)
+
+    for(let i = 0; i < this.quantities.length; i++) {
+      if(this.quantities[i] == 0) {
+        alert('Cart cannot have items with 0 quantity')
+        return
+      }
+    }
+    // push the subtotal to the end of quantities and publish it
+    this.quantities.push(this.subtotal)
+    this.dataSharing.sendQuantities(this.quantities)
+    this.router.navigate(['/checkout'])
+  }
 }

@@ -8,6 +8,7 @@ import { take } from 'rxjs/operators';
 export class DataSharingService {
 
   // whether the user is logged in or not
+  // private isLoggedIn = new BehaviorSubject<boolean>(true)
   private isLoggedIn = new BehaviorSubject<boolean>(false)
   sharedIsLoggedIn = this.isLoggedIn.asObservable()
 
@@ -87,6 +88,10 @@ export class DataSharingService {
   private cart = new BehaviorSubject<Array<Object>>([])
   sharedCart = this.cart.asObservable()
 
+  // track quantities of items in cart
+  private quantities = new BehaviorSubject<Array<number>>([])
+  sharedQuantities = this.quantities.asObservable()
+
   constructor() { }
 
   sendLocation(location: string) {
@@ -108,5 +113,9 @@ export class DataSharingService {
 
   sendCurrentUser(user: Object) {
     this.currentUser.next(user)
+  }
+
+  sendQuantities(quantities: Array<number>) {
+    this.quantities.next(quantities)
   }
 }

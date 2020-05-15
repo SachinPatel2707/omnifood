@@ -65,15 +65,16 @@ input[type=submit]:active {
 /* Header */
 
 .container {
+    width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('../../../assets/img/1.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
 }
 
 .text-box {
@@ -99,10 +100,10 @@ a, a:hover {
 /* FEATURES SECTION */
 
 .section-features {
-    position: absolute;
-    top: 100vh;
     min-height: 50vh;
-    left: 0;
+    /* position: absolute;
+    top: 100vh;
+    left: 0; */
     padding-bottom: 60px;
 }
 
@@ -121,9 +122,9 @@ a, a:hover {
 /* MEALS SHOWCASE */
 
 .section-meals {
-    position: absolute;
+    /* position: absolute;
     top: 180vh;
-    left: 0;
+    left: 0; */
     padding-left: 0;
     padding-right: 0;
 }
@@ -151,20 +152,4 @@ a, a:hover {
 .meal-photo img:hover {
     opacity: 1;
     transform: scale(1.05);
-}
-
-
-/* FOOTER */
-
-.section-footer {
-    height: 30vh;
-    width: 100%;
-    margin: auto;
-    position: absolute;
-    top: 310vh;
-    background-color: #28b062;
-}
-
-.section-footer ul li {
-    font-size: 20px;
 }

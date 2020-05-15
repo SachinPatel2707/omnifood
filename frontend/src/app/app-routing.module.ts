@@ -6,12 +6,14 @@ import { HomeComponent } from './components/home/home.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { RestaurantComponent } from './components/restaurant/restaurant.component';
 import { CanActivateRouteGuard } from './can-activate-routes.guard';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 const routes: Routes = [
   { path: 'login', component:  LoginComponent},
   { path: 'home', component: HomeComponent, canActivate: [CanActivateRouteGuard] },
   { path: 'shop', component: ShopComponent, canActivate: [CanActivateRouteGuard] },
   { path: 'restaurant', component: RestaurantComponent, canActivate: [CanActivateRouteGuard] },
+  { path: 'checkout', component: CheckoutComponent, canActivate: [CanActivateRouteGuard] },
   { path: '', pathMatch: 'full', redirectTo: 'login' }
 ];
 

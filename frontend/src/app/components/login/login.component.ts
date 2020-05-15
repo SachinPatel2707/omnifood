@@ -27,6 +27,16 @@ export class LoginComponent implements OnInit {
   }
 
   login(username: string, password: string) {
+
+    if(!username) {
+      alert('username is required')
+      return
+    }
+    if(!password) {
+      alert('password is required')
+      return
+    }
+
     for(let i = 0; i < this.userdb.length; i++) {
       if(this.userdb[i].username === username) {
         if(this.userdb[i].password === password) {
@@ -38,16 +48,17 @@ export class LoginComponent implements OnInit {
 
           if(username === "admin") {
             window.location.href='http://localhost:4401'
+            return
           } else {
             this.router.navigate(['/home'])
+            return
           }
         }
-        // this.alerts.setMessage('wrong password', 'error')
-        // return
+        alert('wrong password')
+        return
       }
-      // this.alerts.setMessage('user not registered', 'warn')
-      // return
     }
+    alert('user not registered')
   }
 
   register(username: string, password: string) {

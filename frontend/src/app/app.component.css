@@ -68,10 +68,24 @@ nav a {
 }
 
 .outlet {
-    /* min-height: 85vh; */
-    height: fit-content;
+    min-height: 100vh;
     width: 100%;
-    position: absolute;
+    /* padding-top: 15vh; */
+    /* position: relative;
     top: 15vh;
-    left: 0;
+    left: 0; */
+}
+
+/* FOOTER */
+
+.section-footer {
+    height: 30vh;
+    width: 100%;
+    margin-top: 15vh;
+    
+    background-color: #28b062;
+}
+
+.section-footer ul li {
+    font-size: 20px;
 }

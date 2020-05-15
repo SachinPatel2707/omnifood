@@ -17,8 +17,8 @@
                 </div>
                 <div class="name">{{ dish.dishName }}</div>
                 <div class="cost"><i class="fas fa-rupee-sign"></i> {{ dish.cost }} / per serving</div>
-                <div *ngIf="!dish.isAdded" class="cost animate__animated animate__fadeInDown" (click)="addOrRemoveFromCart(dish)">Add to cart</div>
-                <div *ngIf="dish.isAdded" class="cost animate__animated animate__fadeInDown" (click)="addOrRemoveFromCart(dish)">Remove from cart</div>
+                <div *ngIf="!dish.isAdded" class="card-btn animate__animated animate__fadeInDown" (click)="addOrRemoveFromCart(dish)">Add to cart</div>
+                <div *ngIf="dish.isAdded" class="card-btn animate__animated animate__fadeInDown" (click)="addOrRemoveFromCart(dish)">Remove from cart</div>
             </div>
         </div>
         <div class="cart-container" fxLayout="row" fxLayoutAlign="center center">
@@ -33,9 +33,9 @@
                     <i fxFlex="0 1 5%">{{ quantities[i] }}</i>
                     <i fxFlex="0 1 5%" class="fas fa-minus fa-xs" (click)="decQuantity(dish.cost, i)"></i>
                 </div>
-                <div class="animate__animated animate__fadeIn animate__delay-2s">Subtotal &nbsp;&nbsp;&nbsp;&nbsp; {{ subtotal }}</div>
+                <div class="animate__animated animate__fadeIn animate__delay-2s">Subtotal: &nbsp; <span style="font-weight: 400;">{{ subtotal }}</span></div>
                 <div class="cart-btn animate__animated animate__fadeInLeft animate__delay-1s" *ngIf="!isCartEmpty">
-                    <a routerLink="/checkout">Checkout</a>
+                    <a (click)="checkOut()">Checkout</a>
                 </div>
                 <div *ngIf="isCartEmpty">
                     <h5>Cart is empty</h5>

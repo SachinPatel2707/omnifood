@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    padding: 0 10%;
+    padding: 0;
     min-height: 85vh;
 }
 
@@ -23,6 +23,7 @@ a, a:hover {
     min-height: 40vh;
     padding: 120px 50px 60px 50px;
     background-color: rgba(0,0,0,0.9);
+    margin-top: 15vh;
 }
 
 .restaurant-info img {
@@ -57,7 +58,8 @@ a, a:hover {
 /* MAIN BODY */
 
 .main-body {
-    width: 100%;
+    width: 90%;
+    margin: auto;
     min-height: 50vh;   
     margin-bottom: 15vh;
     overflow: hidden;
@@ -115,6 +117,15 @@ a, a:hover {
     color: #28b062;
 }
 
+.card-btn {
+    font-size: 90%;
+    color: #28b062;
+}
+
+.card-btn:hover {
+    color: #444;
+}
+
 .cards div:nth-last-of-type(1) {
     font-weight: 400;
     cursor: pointer;
@@ -158,6 +169,7 @@ a, a:hover {
     font-weight: 400;
     border: 2px solid #78b454;
     padding: 7.5px 15px;
+    cursor: pointer;
 }
 
 .cart a:hover {

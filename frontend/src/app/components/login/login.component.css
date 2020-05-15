@@ -1,5 +1,5 @@
 .container {
-    height: 85vh;
+    height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../../assets/img/login.jpg');
     background-size: cover;
@@ -10,14 +10,14 @@
 h3 {
     font-family: 'Arizonia', cursive;
     font-size: 300%;
-    color: #28b062;
+    color: #78b454;
     margin-bottom: 30px;
 }
 
 h4 {
   font-family: 'Arizonia', cursive;
   font-size: 200%;
-  color: #28b062;
+  color: #78b454;
   margin-bottom: 30px;
 }
 
@@ -52,16 +52,16 @@ form {
     margin: 20px;
     margin-left: 0;
     outline: none;
-    border: 1px solid #28b062;
+    border: 1px solid #78b454;
     background-color: transparent;
-    color: #28b062;
+    color: #78b454;
     cursor: pointer;
     text-transform: uppercase;
     font-family: 'Josefin sans';
     transition: all 0.2s; 
   }
   button:hover {
-      background-color: #28b062;
+      background-color: #78b454;
       color: #fff;
   }
 
