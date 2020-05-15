@@ -23,9 +23,25 @@ export class ShopComponent implements OnInit {
     this.data.getRestaurants()
     .subscribe(data => {
       this.allRestaurants = data
-      this.filteredRestaurants = data
-      console.log(this.allRestaurants)
+      this.checkAvailability(this.allRestaurants)
     })
+  }
+
+  checkAvailability(allRestaurants: any) {
+    
+    let temp = []
+
+    for(let i = 0; i < allRestaurants.length; i++) {
+      if(allRestaurants[i].available === "True") {
+        temp.push(allRestaurants[i])
+      }
+    }
+
+    this.allRestaurants = temp
+    this.filteredRestaurants = this.allRestaurants
+
+    // REMOVE
+    console.log(this.allRestaurants)
   }
 
   changeLocation(location: string) {

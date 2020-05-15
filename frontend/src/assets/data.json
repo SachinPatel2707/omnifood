@@ -6,7 +6,7 @@
 		"location": "Delhi",
 		"contact": "+91-9898808098",
 		"accessed": 121,
-		"availble": true,
+		"available": "True",
 		"image": "../../assets/img/1.jpg",
 		"dishes": [
 			{
@@ -90,6 +90,7 @@
 		"location": "Delhi",
 		"contact": "+91-900000000",
 		"accessed": 127,
+		"available": "True",
 	    "image": "../../assets/img/2.jpg",
 		"dishes": [
 			{
@@ -119,6 +120,7 @@
 		"location": "Delhi",
 		"contact": "+91-9898808098",
 		"accessed": 11,
+		"available": "True",
 		"image": "../../assets/img/3.jpg",
 		"dishes": [
 			{
@@ -157,7 +159,7 @@
 		"location": "Delhi",
 		"contact": "+91-9898808098",
 		"accessed": 121,
-		"availble": true,
+		"available": "True",
 		"image": "../../assets/img/1.jpg",
 		"dishes": [
 			{
@@ -196,6 +198,7 @@
 		"location": "Delhi",
 		"contact": "+91-900000000",
 		"accessed": 127,
+		"available": "True",
 	    "image": "../../assets/img/2.jpg",
 		"dishes": [
 			{
@@ -225,6 +228,7 @@
 		"location": "Delhi",
 		"contact": "+91-9898808098",
 		"accessed": 11,
+		"available": "True",
 		"image": "../../assets/img/3.jpg",
 		"dishes": [
 			{
@@ -263,7 +267,7 @@
 		"location": "Noida",
 		"contact": "+91-9898808098",
 		"accessed": 121,
-		"availble": true,
+		"available": "True",
 		"image": "../../assets/img/1.jpg",
 		"dishes": [
 			{
@@ -347,6 +351,7 @@
 		"location": "Noida",
 		"contact": "+91-900000000",
 		"accessed": 127,
+		"available": "True",
 	    "image": "../../assets/img/2.jpg",
 		"dishes": [
 			{
@@ -376,6 +381,7 @@
 		"location": "Noida",
 		"contact": "+91-9898808098",
 		"accessed": 11,
+		"available": "True",
 		"image": "../../assets/img/3.jpg",
 		"dishes": [
 			{
@@ -414,7 +420,7 @@
 		"location": "Noida",
 		"contact": "+91-9898808098",
 		"accessed": 121,
-		"availble": true,
+		"available": "True",
 		"image": "../../assets/img/1.jpg",
 		"dishes": [
 			{
@@ -453,6 +459,7 @@
 		"location": "Noida",
 		"contact": "+91-900000000",
 		"accessed": 127,
+		"available": "false",
 	    "image": "../../assets/img/2.jpg",
 		"dishes": [
 			{
@@ -482,6 +489,7 @@
 		"location": "Noida",
 		"contact": "+91-9898808098",
 		"accessed": 11,
+		"available": "false",
 		"image": "../../assets/img/3.jpg",
 		"dishes": [
 			{
