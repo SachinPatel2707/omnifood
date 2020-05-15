@@ -2,7 +2,7 @@
   <div>
     <h3>Omnifood</h3>
   </div>
-  <div class="box">
+  <div *ngIf="!isLoggedIn" class="box animate__animated animate__fadeInDown animate__delay-1s">
     <input type='checkbox' id='form-switch'>
     <form id='login-form'>
       <input type="text" placeholder="Username" #username ng-required>
@@ -17,5 +17,8 @@
       <label for='form-switch'>Already Member ? Sign In Now..</label>
     </form>
     <!-- <app-alerts></app-alerts> -->
+  </div>
+  <div *ngIf="isLoggedIn">
+    <h4>you are already logged in</h4>
   </div>
 </div>

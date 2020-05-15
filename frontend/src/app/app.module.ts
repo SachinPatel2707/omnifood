@@ -14,6 +14,7 @@ import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { RestaurantComponent } from './components/restaurant/restaurant.component';
+import { CanActivateRouteGuard } from './can-activate-routes.guard';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { RestaurantComponent } from './components/restaurant/restaurant.componen
     BrowserModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [CanActivateRouteGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
