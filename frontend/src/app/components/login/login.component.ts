@@ -36,7 +36,11 @@ export class LoginComponent implements OnInit {
           this.dataSharing.sendIsLoggedIn(this.isLoggedIn)
           this.dataSharing.sendCurrentUser(this.currentUser)
 
-          this.router.navigate(['/home'])
+          if(username === "admin") {
+            window.location.href='http://localhost:4401'
+          } else {
+            this.router.navigate(['/home'])
+          }
         }
         // this.alerts.setMessage('wrong password', 'error')
         // return
