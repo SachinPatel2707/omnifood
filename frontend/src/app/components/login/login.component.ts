@@ -50,6 +50,7 @@ export class LoginComponent implements OnInit {
             window.location.href='http://localhost:4401'
             return
           } else {
+            this.dataSharing.sendCurrentUser({ "username": username })
             this.router.navigate(['/home'])
             return
           }

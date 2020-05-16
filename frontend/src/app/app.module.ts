@@ -15,6 +15,8 @@ import { ShopComponent } from './components/shop/shop.component';
 import { RestaurantComponent } from './components/restaurant/restaurant.component';
 import { CanActivateRouteGuard } from './can-activate-routes.guard';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { DonateComponent } from './components/donate/donate.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
     HomeComponent,
     ShopComponent,
     RestaurantComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    DonateComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

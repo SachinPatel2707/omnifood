@@ -75,7 +75,9 @@ export class CheckoutComponent implements OnInit {
 	      "Rating" : form.value.rating
       }
 
-      console.log(formData)
+      // console.log(formData)
+
+      this.data.postOrder(formData)
 
       alert('Your order was placed successfully')
 
