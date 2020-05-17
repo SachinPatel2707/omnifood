@@ -58,6 +58,10 @@ export class DataService {
   fetchBlogs(): Observable<any> {
     return this.http.get(_blogURL)
   }
+
+  postFeedback(body: Object): Observable<any> {
+    return this.http.post(_baseURL + 'feedback', body)
+  }
 }
 
 /*
@@ -104,6 +108,10 @@ export class DataService {
 
   fetchBlogs(): Observable<any> {
     return this.http.get(_baseURL + 'blog')
+  }
+
+  postFeedback(body: Object): Observable<any> {
+    return this.http.post(_baseURL + 'feedback', body)
   }
 }
 */

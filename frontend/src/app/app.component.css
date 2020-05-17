@@ -24,23 +24,9 @@ ul li {
     border: 2px solid transparent;
 }
 
-ul li:hover {
+nav ul li:hover {
     border: 2px solid #fff;
 }
-
-/* ul li:nth-of-type(3),
-ul li:nth-of-type(3):hover {
-    padding: 0;
-    border: none;
-} */
-
-/* ul li:last-of-type {
-    border: 2px solid #fff;
-} */
-
-/* ul li:last-of-type:hover {
-    background-color: #444;
-} */
 
 ul li img {
     position: relative;
@@ -70,10 +56,6 @@ nav a {
 .outlet {
     min-height: 100vh;
     width: 100%;
-    /* padding-top: 15vh; */
-    /* position: relative;
-    top: 15vh;
-    left: 0; */
 }
 
 /* FOOTER */
@@ -88,4 +70,9 @@ nav a {
 
 .section-footer ul li {
     font-size: 20px;
+    cursor: pointer;
+}
+
+.section-footer ul li:hover {
+    transform: scale(1.25);
 }

@@ -21,7 +21,7 @@
                 <div *ngIf="dish.isAdded" class="card-btn animate__animated animate__fadeInDown" (click)="addOrRemoveFromCart(dish)">Remove from cart</div>
             </div>
         </div>
-        <div class="cart-container" fxLayout="row" fxLayoutAlign="center center">
+        <div class="cart-container" fxLayout="row wrap" fxLayoutAlign="center center">
             <div class="cart animate__animated animate__fadeIn animate__delay-1s" fxLayout="row wrap" fxLayoutAlign="flex-start flex-start">
                 <div class="cart-heading">
                     <h4>Your Cart</h4>
@@ -41,6 +41,38 @@
                     <h5>Cart is empty</h5>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="feedback-form">
+        <div *ngIf="!displayFeedbackForm" class="div-container cart-btn">
+            <a (click)="toggleFeedbackForm()">Leave a feedback</a>
+        </div>
+        <div *ngIf="displayFeedbackForm">
+            <div class="info-box add-form animate__animated animate__fadeIn animate__delay-1s" fxLayout="row wrap" fxLayoutAlign="flex-start flex-start">
+                <div class="div-container" fxFlex="0 1 100%">
+                    <h4>Leave us a feedback</h4>
+                </div>
+                <div fxFlex="0 1 100%">
+                    <form [formGroup]="registerForm">
+                        <div class="div-container" fxLayout="row wrap" fxLayoutAlign="center center">
+                            <div fxFlex="0 1 30%">Name</div>
+                            <input fxFlex="0 1 50%" type="text" formControlName="name"/>
+                        </div>
+                        <div class="div-container" fxLayout="row wrap" fxLayoutAlign="center center">
+                            <div fxFlex="0 1 30%">Comments</div>
+                            <textarea fxFlex="0 1 50%" name="post" id="post" cols="30" rows="10" formControlName="comments"></textarea>
+                        </div>
+                        <div class="div-container" fxLayout="row wrap" fxLayoutAlign="center center">
+                            <div fxFlex="0 1 30%">Rating</div>
+                            <input fxFlex="0 1 50%" type="number" formControlName="rating"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="div-container" fxFlex="0 1 100%" style="text-align: center;">
+                    <button (click)="onSubmit(registerForm)">Submit Feedback</button>
+                </div>
+            </div>        
         </div>
     </div>
 </div>

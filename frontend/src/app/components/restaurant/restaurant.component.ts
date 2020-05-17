@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { DataSharingService } from '../../services/data-sharing.service';
 import { DataService } from '../../services/data.service';
@@ -16,8 +17,11 @@ export class RestaurantComponent implements OnInit {
   quantities: number[] = []
   subtotal: number = 0
   isCartEmpty: boolean = true
+  displayFeedbackForm: boolean = false
+  registerForm: FormGroup;
+  submitted: boolean = false
 
-  constructor(private data: DataService, private dataSharing: DataSharingService, private router: Router) { }
+  constructor(private data: DataService, private dataSharing: DataSharingService, private router: Router, private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
     this.dataSharing.sharedSelectedRestaurant
@@ -36,6 +40,12 @@ export class RestaurantComponent implements OnInit {
         data.forEach(()=> this.quantities.push(0))
       }
     })
+
+    this.registerForm = this.formBuilder.group({
+      name: ['' ,Validators.required],
+      comments: ['' ,Validators.required],
+      rating: ['', [Validators.min(1), Validators.max(10)]]
+    });
   }
 
   addOrRemoveFromCart(dish: any) {
@@ -93,5 +103,34 @@ export class RestaurantComponent implements OnInit {
     this.quantities.push(this.subtotal)
     this.dataSharing.sendQuantities(this.quantities)
     this.router.navigate(['/checkout'])
+  }
+
+  toggleFeedbackForm() {
+    this.displayFeedbackForm = !this.displayFeedbackForm
+  }
+
+  onSubmit(form: any) {
+    this.submitted = true;
+
+    // stop here if form is invalid
+    if (this.registerForm.invalid) {
+        return;
+    } 
+
+    let formData = {
+      "name": form.value.name,
+      "comments": form.value.comments,
+      "rating": form.value.rating
+    }
+
+    // console.log(formData)
+
+    this.data.postFeedback(formData)
+
+    form.reset()
+    this.submitted = false
+    this.toggleFeedbackForm()
+
+    alert('Your feedback was received successfully')
   }
 }

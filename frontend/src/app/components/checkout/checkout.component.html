@@ -47,7 +47,7 @@
                         <span *ngIf="f.location.errors.required" class="alert">Address is required</span>
                     </span>
                 </div>
-                <div class="form-group" fxLayout="row wrap" fxLayoutAlign="center center">
+                <div fxLayout="row wrap" fxLayoutAlign="center center">
                     <label fxFlex="0 1 20%">Rating</label>
                     <input fxFlex="0 1 40%" type="number" formControlName="rating" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.rating.errors }" />
                     <span fxFlex="0 1 20%"></span>
