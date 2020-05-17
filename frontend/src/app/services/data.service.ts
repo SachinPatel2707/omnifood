@@ -133,4 +133,8 @@ export class DataService {
       "rating": rating
     })
   }
+
+  updateAccessCount(restaurant: any): Observable<any> {
+    return this.http.put(_baseURL + 'restaurant/updateAccessCount', restaurant)
+  }
 }

@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { DataSharingService } from '../../services/data-sharing.service';
 import { DataService } from '../../services/data.service';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-restaurant',
@@ -24,8 +25,11 @@ export class RestaurantComponent implements OnInit {
   constructor(private data: DataService, private dataSharing: DataSharingService, private router: Router, private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
-    this.dataSharing.sharedSelectedRestaurant
-    .subscribe(data => this.selectedRestaurant = data)
+    this.dataSharing.sharedSelectedRestaurant.pipe(take(1))
+    .subscribe(data => {
+      this.selectedRestaurant = data
+      this.updateAccessCount()
+    })
 
     this.dataSharing.sharedCart
     .subscribe(data => {
@@ -118,5 +122,11 @@ export class RestaurantComponent implements OnInit {
     this.toggleFeedbackForm()
 
     alert('Your feedback was received successfully')
+  }
+
+  updateAccessCount() {
+    this.selectedRestaurant.accessed += 1
+    this.data.updateAccessCount(this.selectedRestaurant)
+    .subscribe(data => console.log(data))
   }
 }
