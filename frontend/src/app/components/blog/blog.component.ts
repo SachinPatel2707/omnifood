@@ -46,22 +46,24 @@ export class BlogComponent implements OnInit {
       // stop here if form is invalid
       if (this.registerForm.invalid) {
           return;
-      } 
-
-      let formData = {
-        "name": this.currentUser.username,
-        "comments": form.value.title,
-        "recipe": form.value.post
       }
 
       // console.log(formData)
 
-      this.data.postBlog(formData)
+      this.data.postBlog(this.currentUser.username, form.value.title, form.value.post).subscribe(data => {
+        console.log(data)
+
+        this.data.fetchBlogs()
+        .subscribe(data => {
+          this.blogPosts = data
+          this.getLatestPosts()
+        })
+      })
 
       form.reset()
       this.submitted = false
 
-      alert('Your blog was added successfully')
+      // alert('Your blog was added successfully')
   }
 
   getLatestPosts() {

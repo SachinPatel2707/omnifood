@@ -67,17 +67,10 @@ export class CheckoutComponent implements OnInit {
         return
       }
 
-      let formData = {
-        "customer": form.value.name,
-	      "name": this.cart[0].name,
-	      "location": form.value.location,
-	      "bill": this.total,
-	      "Rating" : form.value.rating
-      }
-
       // console.log(formData)
 
-      this.data.postOrder(formData)
+      this.data.postOrder(form.value.name, this.cart[0].name, form.value.location, this.total, form.value.rating)
+      .subscribe(data => console.log(data))
 
       alert('Your order was placed successfully')
 

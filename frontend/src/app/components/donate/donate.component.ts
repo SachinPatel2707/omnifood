@@ -53,19 +53,9 @@ export class DonateComponent implements OnInit {
       if (this.registerForm.invalid) {
           return;
       } 
-
-      let formData = {
-        "helper": form.value.helper,
-        "location": form.value.location,
-        "description": form.value.description,
-        "contact": form.value.contact.toString(),
-        "email": form.value.email,
-        "image": form.value.image
-      }
-
-      console.log(formData)
-
-      this.data.postDonation(formData)
+      
+      this.data.postDonation(form.value.helper, form.value.location, form.value.description, form.value.contact.toString(), form.value.email, form.value.image)
+      .subscribe(data => console.log(data))
 
       form.reset()
       this.submitted = false

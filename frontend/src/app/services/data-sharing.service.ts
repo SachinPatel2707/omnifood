@@ -8,8 +8,8 @@ import { take } from 'rxjs/operators';
 export class DataSharingService {
 
   // whether the user is logged in or not
-  private isLoggedIn = new BehaviorSubject<boolean>(true)
-  // private isLoggedIn = new BehaviorSubject<boolean>(false)
+  // private isLoggedIn = new BehaviorSubject<boolean>(true)
+  private isLoggedIn = new BehaviorSubject<boolean>(false)
   sharedIsLoggedIn = this.isLoggedIn.asObservable()
 
   // keep track of current user

@@ -66,9 +66,6 @@ export class RestaurantComponent implements OnInit {
     this.quantities.push(0)
     dish.isAdded = true
     this.dataSharing.sendCart(this.cart)
-    
-    // REMOVE
-    console.log(this.cart)
   }
 
   incQuantity(cost: number, i: number): void {
@@ -76,8 +73,6 @@ export class RestaurantComponent implements OnInit {
       this.quantities[i] += 1
       this.subtotal += cost
     }
-    // REMOVE
-    console.log(this.quantities)
   }
 
   decQuantity(cost:number, i: number): void {
@@ -85,13 +80,11 @@ export class RestaurantComponent implements OnInit {
       this.quantities[i] -= 1
       this.subtotal -= cost
     }
-    // REMOVE
-    console.log(this.quantities)
   }
 
   checkOut() {
 
-    console.log(this.quantities)
+    // console.log(this.quantities)
 
     for(let i = 0; i < this.quantities.length; i++) {
       if(this.quantities[i] == 0) {
@@ -117,15 +110,8 @@ export class RestaurantComponent implements OnInit {
         return;
     } 
 
-    let formData = {
-      "name": form.value.name,
-      "comments": form.value.comments,
-      "rating": form.value.rating
-    }
-
-    // console.log(formData)
-
-    this.data.postFeedback(formData)
+    this.data.postFeedback(form.value.name, form.value.comments, form.value.rating)
+    .subscribe(data => console.log(data))
 
     form.reset()
     this.submitted = false

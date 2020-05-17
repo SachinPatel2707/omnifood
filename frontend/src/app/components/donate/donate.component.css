@@ -124,7 +124,7 @@ input {
     min-height: 85vh;
     padding: 120px 50px 30px 50px;
     background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.5)), url('../../../assets/img/homeless.jpg');
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
     background-position: right;
     margin: 15vh 0;

@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
     }
 
     for(let i = 0; i < this.userdb.length; i++) {
-      if(this.userdb[i].username === username) {
+      if(this.userdb[i].name === username) {
         if(this.userdb[i].password === password) {
           this.isLoggedIn = true
           this.currentUser = this.userdb[i]
@@ -64,5 +64,9 @@ export class LoginComponent implements OnInit {
 
   register(username: string, password: string) {
     
+    this.data.registerUser(username, password)
+    .subscribe(data => {
+      console.log(data)
+    })
   }
 }

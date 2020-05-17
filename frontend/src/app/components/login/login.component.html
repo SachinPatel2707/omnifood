@@ -10,11 +10,11 @@
       <button (click)="login(username.value, password.value)">Login</button>
       <label for='form-switch'><span>Register</span></label>
     </form>
-    <form id='register-form' action="" method='post'>
-      <input type="text" placeholder="Username" #username required>
-      <input type="password" placeholder="Password" #password required>
-      <button (click)="register(username.value, password.value)">Register</button>
-      <label for='form-switch'>Already Member ? Sign In Now..</label>
+    <form id='register-form'>
+      <input type="text" placeholder="Username" #regUsername required>
+      <input type="password" placeholder="Password" #regPassword required>
+      <button (click)="register(regUsername.value, regPassword.value)">Register</button>
+      <label for='form-switch'>Already a Member ? Sign In Now..</label>
     </form>
     <!-- <app-alerts></app-alerts> -->
   </div>
